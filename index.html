@@ -206,33 +206,33 @@
 
                     </div>
                 </div>
-
-
-
-
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
                             </div>
+                            <img src="3D Printing/3D Printing v2.png"  class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                           <h4>3D Printing</h4>
+
+
+
                         </div>
-                        <img src="3D Printing/3D Printing v2.png"  class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                       <h4>3D Printing</h4>
-
-
-
                     </div>
+
+
+
+
                 </div>
 
 
 
-
             </div>
+
 
 
         </div>
@@ -549,7 +549,17 @@
                             <a href="lasercut/Lasercut v1.dxf" download>dxf</a>
                             <a href="lasercut/Lasercut v3.f3d" download>f3d</a>
                             <br><br><h3>Laser Cutting</h3>
-                            <p>Rhinoceros software is then used for preparing the dxf file for the laser cutting machine, a hatch is then created for the text "EUREKA!" and a color is given to it so the laser cutter starts with it. </p>
+                            <p>Rhinoceros software is then used for preparing the dxf file for the laser cutting machine</p>
+                            <p>We first upload the dxf file</p>
+                            <img src="lasercut/open.png" width="700px" height="500px">
+                            <p>We press top -> Maximize </p>
+                            <img src="lasercut/maximize.png" width="700px" height="500px">
+                            <p>We first create a new layer and we call it engraving and we give the color yello, then we select the text and in command line we write hatch to use the hatching tool, then we select the hatch and assign it to the engraving layer we created, after that we deactivate the engraving layer and select the text and delete it. By reactivating the engraving layer we only allow the hatching to be engraved</p>
+                            <p>Then we create a second layer called "out" and we align the outer lines to it and give it the color green </p>
+                            <img src="lasercut/rhino.png" width="700px" height="500px">
+                            <p>Then we press print</p>
+                            <p>After that we adjust the printing parameters for the engraving: Power= 20%, Frequency=2500Hz, Speed=50%</p>
+                            <p>Then we adjust the printing parameters for the outlines: Power= 100%, Frequency=2500Hz, Speed=50%</p>
                             <br><br><h3>Results</h3>
                             <img src="lasercut/result.jpg" width="700px" height="500px">
                             <br><br><h3>Conclusion</h3>
@@ -565,6 +575,79 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h3>3D Printing</h3>
+                            <p>For the 3D Printing we're going to use 360 Fusion software again. First we open the model for the bathtub, then we project the profile of one of the columns:</p>
+                            <img src="3D Printing/1.jpg" width="700px" height="500px">
+                            <p> The sketching profile for the column should look like this:</p>
+                            <img src="3D Printing/2.jpg" width="700px" height="500px">
+                            <p> Then using the extrude tool we can finalize the profile </p>
+                            <img src="3D Printing/3.jpg" width="700px" height="500px">
+                            <p>We then export the file with the extension "stl" that's readable by the slicing program "Cura"</p>
+                            <a href="3D Printing/3D Printing v1.stl" download>stl</a>
+                            <p>Cura is a software responsible for transfering the stl files into G code </p>
+                            <img src="3D Printing/4.jpg" width="700px" height="500px">
+                            <p>And then we edit the printing settings to fit our needs:</p>
+                            <img src="3D Printing/5.jpg" width="700px" height="500px">
+                            <p>Then setting the infill density to 100% </p>
+                            <img src="3D Printing/6.jpg" width="700px" height="500px">
+                            <p>Since it's a prototype I figured it would be more convenient to adjust the height of the part by adjusting the Z axis to be 20mm rather than 120mm </p>
+                            <img src="3D Printing/7.jpg" width="700px" height="500px">
+                            <p>Then we slice </p>
+                            <img src="3D Printing/8.jpg" width="700px" height="500px">
+                            <p>Then we export the file with the extension "ufp" for the ultimaker s5 3D printer we are going to use, we move it to a flash memory drive</p>
+                            <img src="3D Printing/9.jpg" width="700px" height="500px">
+                            <a href="3D Printing/UMS5_3D Printing v1.ufp" download>ufp</a>
+                            <p>We insert the flash memory to the 3D printer</p>
+                            <img src="3D Printing/10.jpg" width="700px" height="500px">
+                            <p>Then we choose the file </p>
+                            <img src="3D Printing/11.jpg" width="700px" height="500px">
+
+                            <p>Then the printer starts to calibrate the XYZ axis</p>
+                            <img src="3D Printing/13.jpg" width="700px" height="500px">
+                            <p> Then the printer starts to print</p>
+                            <img src="3D Printing/14.jpg" width="700px" height="500px">
+                            <img src="3D Printing/16.jpg" width="700px" height="500px">
+                            <img src="3D Printing/12.jpg" width="700px" height="500px">
+                            <h3> Results </h3>
+                            <img src="3D Printing/17.jpg" width="700px" height="500px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <br><br><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
