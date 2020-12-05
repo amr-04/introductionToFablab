@@ -232,6 +232,27 @@
 
 
             </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/embedded/embedded.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <h4>Embedded Programming</h4>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
 
 
 
@@ -647,6 +668,48 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                          <h3>Abstract</h3>
+                          <p>The idea is to write a sketch that turn on/off the built-in arduino LED depending on the number of button pushes and to show each push number on the serial monitor, using Arduino Uno.</p>
+                          <br><br><br><br><br><br><br><h3>Components</h3>
+                          <p>Arduino Uno<br>220Ω resistor<br>Jumpers<br>Breadboard<br></p>
+                          <br><br><br><br><br><br><br><h3>Circuit Connection</h3>
+                          <img src="Embedded Programming/0.png" width="700px" height="500px">
+                          <br><br><br><br><br><br><br><h3>Arduino Sketch</h3>
+                          <p>We first declare variable "state" with integer datatype and we initialize by giving it a value of 1, this variable will be responsible for storing the value of the state we're in (the push number):</p>
+                          <img src="Embedded Programming/1.png">
+                          <p>Then in the void setup scope, we first need begin serial communication on baud 9600, then configuring the pin mode of the built-in LED to be the output and the button connected to pin 7 to be the input:</p>
+                          <img src="Embedded Programming/2.png" width="1000px">
+                          <p>We then declare variable "state" with integer datatype and we initialize by giving it a value of 0, this variable is going to be use as the counter for the while loop we're going to use:</p>
+                          <img src="Embedded Programming/3.png" width="1000px">
+                          <p>Then we use an if statement to check if the button is pressed, we add inside it a while loop for turning the LED on/off depending on the number of pushes (value of the state variable), we then iterate the loop counter inside the loop scope, and we iterate the state counter inside the if statement scope:</p>
+                          <img src="Embedded Programming/4.png" width="1100px">
+                          <p>In the arduino software we set the board type to arduino uno from tools->board->arduino uno</p>
+                          <p>Then we plug the Arduino Uno to the laptop usb and then we choose the port from tools->port->"arduino uno port"</p>
+                          <p>After that we press verify to verify the sketch code, then we press upload to upload it to the arduino</p>
+                          <h3>Results</h3>
+                          <video width="320" height="240" controls muted>
+                          <source src="Embedded Programming/result.mp4" type="video/mp4">
+                          </video><br><br><br>
+                          <a href="Embedded Programming/arduino_assignment.ino" download>Arduino Sketch</a>
+
+
+
+
+
+
+
 
 
 
